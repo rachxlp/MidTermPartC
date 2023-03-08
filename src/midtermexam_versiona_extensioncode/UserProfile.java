@@ -16,9 +16,9 @@ package midtermexam_versiona_extensioncode;
 public class UserProfile 
 {
     
-    private String userID;//the userID
-    private String genre;// the user's preferred genre of movie
-    private String[] genres = {"Comedy", "Drama", "Action", "Mystery"};//available genres of movies
+    public String userID;//the userID
+    public String genre;// the user's preferred genre of movie
+    public String[] genres = {"Comedy", "Drama", "Action", "Mystery"};//available genres of movies
     
     /**
      * A constructor that takes in the userID and the favourite genre
@@ -29,6 +29,10 @@ public class UserProfile
     {
         userID = givenID;
         genre= givenGenre;
+    }
+
+    UserProfile() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
